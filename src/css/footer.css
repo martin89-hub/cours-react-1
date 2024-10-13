@@ -1,0 +1,91 @@
+/* Style général du footer */
+.footer {
+    background-color:#EEE ;
+    color: #444;
+    padding: 20px 0;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Chaque colonne du footer */
+.footer-column {
+    flex: 1;
+    padding: 10px;
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-column p, .footer-column a {
+    color: #444 ;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #0d6efd;
+}
+
+/* Icônes sociales */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color:#000000;
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.social-icons a:hover {
+    color: #0d6efd ;
+}
+
+/* Ligne de copyright */
+.copyright {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #fafafa ;
+    text-align: center;
+    background-color:#1e1e1e;
+}
+
+/* Style des listes */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+}

@@ -1,0 +1,82 @@
+/* src/components/Header.css */
+.header {
+    background-color: #ffffff; /* Couleur de fond */
+    padding: 15px 0; /* Espacement */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre */
+  
+  }
+  
+  #className,.header{
+    background-color: #1e1e1e;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centrage */
+  }
+  
+  .logo a {
+    text-decoration: none; /* Enlever le soulignement */
+    font-size: 24px; /* Taille de la police pour le logo */
+    color: #EEE ; /* Couleur du texte */
+    font-weight: bold; /* Gras */
+  }
+  
+  .navigation ul {
+    list-style: none; /* Enlever les puces */
+    display: flex; /* Affichage en ligne */
+  }
+  
+  .navigation li {
+    margin-left: 20px; /* Espacement entre les éléments */
+  }
+  
+  .navigation a {
+    text-decoration: none; /* Enlever le soulignement */
+    color: #7a7878 ; /* Couleur du texte */
+    text-transform: uppercase; /* Texte en majuscules */
+  }
+  
+  .navigation .active {
+    color: #ffffff; /* Couleur de l'élément actif */
+  }
+  
+  .hamburger {
+    display: none; /* Cacher le menu hamburger par défaut */
+    flex-direction: column; /* Empiler les barres */
+    cursor: pointer; /* Curseur pointer */
+  }
+  
+  .hamburger .bar {
+    height: 3px; /* Hauteur des barres */
+    width: 25px; /* Largeur des barres */
+    background-color: #000; /* Couleur des barres */
+    margin: 4px 0; /* Espacement entre les barres */
+  }
+  
+  /* Styles pour mobile */
+  @media (max-width: 768px) {
+    .navigation {
+      display: none; /* Cacher le menu de navigation */
+      flex-direction: column; /* Empiler les éléments */
+      position: absolute; /* Position absolue */
+      top: 60px; /* En dessous du header */
+      right: 0; /* Aligné à droite */
+      background-color: #ffffff; /* Fond blanc */
+      width: 100%; /* Largeur totale */
+      z-index: 1; /* Au-dessus des autres éléments */
+    }
+  
+    .navigation.active {
+      display: flex; /* Afficher le menu lorsque c'est actif */
+    }
+  
+    .hamburger {
+      display: flex; /* Afficher le menu hamburger */
+    }
+  }
+  

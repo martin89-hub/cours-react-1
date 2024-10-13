@@ -1,0 +1,110 @@
+ /* Section du portfolio */
+.portfolio-section {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Couleur de fond légère pour contraster avec le texte */
+    font-family: 'Nunito Sans', sans-serif; /* Identité visuelle - police principale */
+  }
+  
+  .portfolio-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #007bff; /* Ligne bleue sous le titre */
+    margin: 10px auto;
+  }
+  
+  .portfolio-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  /* Grille des cartes du portfolio */
+  .portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour donner du relief */
+    width: 30%; /* 3 cartes par ligne */
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Soulèvement de la carte au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+  }
+  
+  .card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Couleur principale bleue */
+    margin: 15px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666; /* Couleur du texte pour une bonne lisibilité */
+    margin: 0 15px 15px;
+  }
+  
+  .card .tech {
+    font-size: 0.9rem;
+    color: #999;
+    margin: 0 15px 15px;
+    font-style: italic;
+  }
+  
+  /* Style du bouton Voir */
+  .card .btn {
+    display: block;
+    width: 100px;
+    margin: 15px auto;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card .btn:hover {
+    background-color: #0056b3; /* Couleur plus foncée au survol */
+  }
+  
+  /* Media queries pour un design responsive */
+  @media (max-width: 992px) {
+    .card {
+      width: 48%; /* Deux cartes par ligne sur des écrans moyens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Une carte par ligne sur des petits écrans */
+    }
+  }
+     

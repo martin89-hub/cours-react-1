@@ -1,0 +1,97 @@
+/* src/components/Contact.css */
+
+/* Style général */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #EEE ;
+    color: #444;
+    
+    
+}
+
+.contact-title {
+    color: #1e1e1e;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.contact-intro {
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* Formulaire de contact */
+.contact-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.contact-form-section, .contact-details-section {
+    flex: 0 0 48%; /*  l'impression que les colonnes sont proches */
+}
+
+/* Ligne bleue sous les titres */
+.title-separator {
+    border: 0;
+    height: 2px;
+    background-color: #0d6efd;
+    width: 520px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Formulaire */
+form {
+    margin-top: 20px;
+}
+
+.form-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+button.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+button.btn-primary:hover {
+    background-color: #298eff;
+    border-color: #298eff;
+}
+
+/* Mes coordonnées */
+.contact-details-section p {
+    margin-bottom: 15px;
+}
+
+iframe {
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+
+
+
+.text-center .contact-intro >p::after {
+    content: ''; /* Crée un élément vide */
+    display: block;
+    width: 250px; /* Largeur du trait */
+    height: 4px; /* Épaisseur du trait */
+    background-color:#0d6efd ; /* Couleur bleue pour le trait */
+    margin: 10px auto 0; /* Centrer le trait */
+  }
+
+
+
+  
+
+ 

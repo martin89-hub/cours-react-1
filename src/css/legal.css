@@ -1,0 +1,111 @@
+.legal-page {
+    padding: 50px;
+    background-color:#EEE  ; /* Couleur de fond conforme à l'identité visuelle */
+    font-family: 'Nunito Sans', sans-serif; /* Police conforme à l'identité visuelle */
+  }
+  
+  .legal-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #444; /* Couleur du titre */
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .legal-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color:#0d6efd ; /* Couleur bleue pour souligner */
+    margin: 10px auto 0;
+  }
+  
+  .accordion-button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#444 ;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color:rgb(220, 232, 253) ; /* Fond bleu clair lorsqu'il est ouvert */
+    color: #0d6efd;
+  }
+  
+  .accordion-body {
+    background-color:#EEE ;
+    border: 1px solid#EEE  ;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    cursor: pointer;
+  }
+  
+  .accordion-body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  /*style card contact info*/
+
+  .contact-info {
+    background-color:#EEE  ; /* Fond clair */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 2px 4px #444; /* Légère ombre */
+    text-align: left; /* Alignement à gauche */
+  }
+  
+  .contact-card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Couleur standard de texte */
+  }
+  
+  .contact-card p {
+    font-size: 1rem;
+    color: #444; /* Pas d'italique, couleur sombre */
+    margin: 5px 0;
+  }
+  
+  .contact-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .contact-card p span {
+    vertical-align: middle; /* Alignement correct des icônes */
+  }
+  
+  a {
+    color:#0d6efd ;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

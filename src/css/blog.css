@@ -1,0 +1,70 @@
+.blog-page {
+    padding: 50px;
+    background-color: #f9f9f9; /* Couleur de fond conforme à l'identité visuelle */
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .blog-page ,P{
+    text-align: center;
+  }
+  
+  .blog-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards */
+  }
+  
+  .card {
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .button {
+    background-color: #007bff; /* Customize button color */
+    border: none; /* Remove border */
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+
+
+
+  
+  .blog-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    position: relative; /* Position relative pour l'élément de trait */
+    
+  }
+
+
+  /*width: 100px; /* Largeur du trait */
+   /* height: 4px; /* Épaisseur du trait */
+
+
+
+
+  
+  .blog-page p::after {
+    content: ''; /* Crée un élément vide */
+    display: block;
+    background-color: #007bff; /* Couleur bleue pour le trait */
+    margin: 10px auto 0; /* Centrer le trait */
+  }
+  

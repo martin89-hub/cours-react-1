@@ -1,0 +1,71 @@
+/* src/components/Services.css */
+
+/* Style général */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #EEE;
+    color: #444;
+}
+
+.services-page {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.services-title {
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.services-intro {
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* Carte des services */
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 100%; /* Assure que toutes les cartes aient la même hauteur */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.service-title {
+    font-size: 20px;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.service-description {
+    font-size: 14px;
+    color: #444;
+}
+
+
+
+
+  
+  .text-center .services-intro::after {
+    content: ''; /* Crée un élément vide */
+    display: block;
+    width: 250px; /* Largeur du trait */
+    height: 4px; /* Épaisseur du trait */
+    background-color:#0d6efd ; /* Couleur bleue pour le trait */
+    margin: 10px auto 0; /* Centrer le trait */
+  }
+

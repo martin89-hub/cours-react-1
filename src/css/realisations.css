@@ -1,0 +1,78 @@
+/* Styles généraux du conteneur de portfolio */
+.portfolio-container {
+  text-align: center;
+  padding: 20px;
+  background-color:#EEE  ; /* Couleur de fond légère */
+}
+
+h1 {
+  font-size: 2.5rem; /* Taille du titre */
+  margin-bottom: 10px;
+  color:#444; /* Couleur sombre */
+}
+
+p {
+  font-size: 1rem;
+  color:#444 ; /* Couleur grise pour le texte */
+}
+
+/* Grille de projets */
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Permet d'avoir plusieurs lignes */
+  margin-top: 20px; /* Marge supérieure pour espacer du texte au-dessus */
+}
+
+/* Carte de projet */
+.project-card {
+  background-color: #EEE; /* Couleur de fond blanche pour les cartes */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  width: 300px; /* Largeur fixe */
+  transition: transform 0.2s; /* Transition pour effet de survol */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.project-image {
+  width: 100%; /* Prend toute la largeur du conteneur */
+  height: auto; /* Garde le ratio d'aspect */
+  border-radius: 8px; /* Coins arrondis pour l'image */
+}
+
+.visit-project-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #c8defa; /* Couleur bleue */
+  color:#0d6efd  ; /* Couleur du texte */
+  text-decoration: none; /* Pas de soulignement */
+  border-radius: 10%; /* Coins arrondis */
+  transition: background-color 0.3s; /* Transition douce pour l'effet de survol */
+}
+
+.visit-project-btn:hover {
+  background-color: #a3c4f5; /* Couleur bleue plus foncée au survol */
+}
+
+.project-details {
+  margin-top: 5px;
+  font-size: 0.9rem; /* Taille légèrement réduite */
+  color: #444; /* Couleur grise pour les détails */
+}
+
+
+
+.portfolio-container >p::after {
+  content: ''; /* Crée un élément vide */
+  display: block;
+  width: 150px; /* Largeur du trait */
+  height: 4px; /* Épaisseur du trait */
+  background-color:#0d6efd ; /* Couleur bleue pour le trait */
+  margin: 10px auto 0; /* Centrer le trait */
+}
