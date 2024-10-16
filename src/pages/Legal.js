@@ -30,9 +30,9 @@ const Legal = () => {
           <Accordion.Header>Hébergeur</Accordion.Header>
 
           <Accordion.Body>
-            L'hébergeur du site est OVHcloud.<br />
-            Adresse : 2 rue Kellermann, 59100 Roubaix, France.<br />
-            <a href="https://www.ovh.com" target="_blank" rel="noopener noreferrer">Site Web d'OVH</a>
+          L'hébergeur du site est **CodeSandbox**.<br />
+            Adresse : **CodeSandbox B.V., adresse de leur siège**<br />
+            <a href="https://codesandbox.io" target="_blank" rel="noopener noreferrer">Site Web de CodeSandbox</a>
           </Accordion.Body>
 
         </Accordion.Item>
